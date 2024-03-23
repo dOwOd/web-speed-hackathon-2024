@@ -1,9 +1,5 @@
 lockfileVersion: '6.0'
 
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
-
 importers:
 
   .:
@@ -31,7 +27,7 @@ importers:
     dependencies:
       '@chakra-ui/icons':
         specifier: 2.1.1
-        version: 2.1.1(@chakra-ui/system@2.6.2)(react@18.2.0)
+        version: 2.1.1(react@18.2.0)
       '@chakra-ui/react':
         specifier: 2.8.2
         version: 2.8.2(@emotion/react@11.11.1)(@emotion/styled@11.11.0)(@types/react@18.2.0)(framer-motion@10.16.5)(react-dom@18.2.0)(react@18.2.0)
@@ -70,7 +66,7 @@ importers:
         version: 1.2.0
       magika:
         specifier: 0.2.12
-        version: 0.2.12(seedrandom@3.0.5)
+        version: 0.2.12
       react:
         specifier: 18.2.0
         version: 18.2.0
@@ -132,9 +128,6 @@ importers:
       jquery:
         specifier: 3.7.1
         version: 3.7.1
-      lodash:
-        specifier: 4.17.21
-        version: 4.17.21
       moment-timezone:
         specifier: 0.5.45
         version: 0.5.45
@@ -178,9 +171,6 @@ importers:
       '@types/jquery':
         specifier: 3.5.29
         version: 3.5.29
-      '@types/lodash':
-        specifier: 4.14.202
-        version: 4.14.202
       '@types/react':
         specifier: 18.2.0
         version: 18.2.0
@@ -277,13 +267,13 @@ importers:
         version: 0.0.83
       esbuild-plugin-polyfill-node:
         specifier: 0.3.0
-        version: 0.3.0(esbuild@0.19.11)
+        version: 0.3.0
       pkg-dir:
         specifier: 5.0.0
         version: 5.0.0
       tsup:
         specifier: 8.0.1
-        version: 8.0.1(typescript@5.4.2)
+        version: 8.0.1
 
   workspaces/image-encrypt:
     devDependencies:
@@ -319,7 +309,7 @@ importers:
     dependencies:
       drizzle-orm:
         specifier: 0.29.3
-        version: 0.29.3(@types/better-sqlite3@7.6.8)(@types/react@18.2.0)(better-sqlite3@9.3.0)(react@18.2.0)
+        version: 0.29.3
       drizzle-zod:
         specifier: 0.5.1
         version: 0.5.1(drizzle-orm@0.29.3)(zod@3.22.4)
@@ -449,7 +439,7 @@ importers:
         version: 0.20.9
       tsup:
         specifier: 8.0.1
-        version: 8.0.1(typescript@5.4.2)
+        version: 8.0.1
 
   workspaces/testing:
     devDependencies:
@@ -921,14 +911,23 @@ packages:
       react: 18.2.0
     dev: false
 
-  /@chakra-ui/icons@2.1.1(@chakra-ui/system@2.6.2)(react@18.2.0):
+  /@chakra-ui/icon@3.2.0(react@18.2.0):
+    resolution: {integrity: sha512-xxjGLvlX2Ys4H0iHrI16t74rG9EBcpFvJ3Y3B7KMQTrnW34Kf7Da/UC8J67Gtx85mTHW020ml85SVPKORWNNKQ==}
+    peerDependencies:
+      '@chakra-ui/system': '>=2.0.0'
+      react: '>=18'
+    dependencies:
+      '@chakra-ui/shared-utils': 2.0.5
+      react: 18.2.0
+    dev: false
+
+  /@chakra-ui/icons@2.1.1(react@18.2.0):
     resolution: {integrity: sha512-3p30hdo4LlRZTT5CwoAJq3G9fHI0wDc0pBaMHj4SUn0yomO+RcDRlzhdXqdr5cVnzax44sqXJVnf3oQG0eI+4g==}
     peerDependencies:
       '@chakra-ui/system': '>=2.0.0'
       react: '>=18'
     dependencies:
-      '@chakra-ui/icon': 3.2.0(@chakra-ui/system@2.6.2)(react@18.2.0)
-      '@chakra-ui/system': 2.6.2(@emotion/react@11.11.1)(@emotion/styled@11.11.0)(react@18.2.0)
+      '@chakra-ui/icon': 3.2.0(react@18.2.0)
       react: 18.2.0
     dev: false
 
@@ -3559,7 +3558,7 @@ packages:
       - encoding
     dev: false
 
-  /@tensorflow/tfjs-data@4.17.0(@tensorflow/tfjs-core@4.17.0)(seedrandom@3.0.5):
+  /@tensorflow/tfjs-data@4.17.0(@tensorflow/tfjs-core@4.17.0):
     resolution: {integrity: sha512-aPKrDFip+gXicWOFALeNT7KKQjRXFkHd/hNe/zs4mCFcIN00hy1PkZ6xkYsgrsdLDQMBSGeS4B4ZM0k5Cs88QA==}
     peerDependencies:
       '@tensorflow/tfjs-core': 4.17.0
@@ -3568,7 +3567,6 @@ packages:
       '@tensorflow/tfjs-core': 4.17.0
       '@types/node-fetch': 2.6.11
       node-fetch: 2.6.13
-      seedrandom: 3.0.5
       string_decoder: 1.3.0
     transitivePeerDependencies:
       - encoding
@@ -3582,13 +3580,13 @@ packages:
       '@tensorflow/tfjs-core': 4.17.0
     dev: false
 
-  /@tensorflow/tfjs-node@4.17.0(seedrandom@3.0.5):
+  /@tensorflow/tfjs-node@4.17.0:
     resolution: {integrity: sha512-lRe5XPwLzVgpLoxgKWWlqCX9uYybklMai3npgVcvniLQnd6JjkGx+RY2D+7jyQmdo1zJUACfxw3conP88OcBug==}
     engines: {node: '>=8.11.0'}
     requiresBuild: true
     dependencies:
       '@mapbox/node-pre-gyp': 1.0.9
-      '@tensorflow/tfjs': 4.17.0(seedrandom@3.0.5)
+      '@tensorflow/tfjs': 4.17.0
       adm-zip: 0.5.12
       google-protobuf: 3.21.2
       https-proxy-agent: 2.2.4
@@ -3602,7 +3600,7 @@ packages:
     dev: false
     optional: true
 
-  /@tensorflow/tfjs@4.17.0(seedrandom@3.0.5):
+  /@tensorflow/tfjs@4.17.0:
     resolution: {integrity: sha512-yXRBhpM3frlNA/YaPp6HNk9EfIi8han5RYeQA3R8OCa0Od+AfoG1PUmlxV8fE2wCorlGVyHsgpiJ6M9YZPB56w==}
     hasBin: true
     dependencies:
@@ -3610,7 +3608,7 @@ packages:
       '@tensorflow/tfjs-backend-webgl': 4.17.0(@tensorflow/tfjs-core@4.17.0)
       '@tensorflow/tfjs-converter': 4.17.0(@tensorflow/tfjs-core@4.17.0)
       '@tensorflow/tfjs-core': 4.17.0
-      '@tensorflow/tfjs-data': 4.17.0(@tensorflow/tfjs-core@4.17.0)(seedrandom@3.0.5)
+      '@tensorflow/tfjs-data': 4.17.0(@tensorflow/tfjs-core@4.17.0)
       '@tensorflow/tfjs-layers': 4.17.0(@tensorflow/tfjs-core@4.17.0)
       argparse: 1.0.10
       chalk: 4.1.2
@@ -3701,6 +3699,7 @@ packages:
 
   /@types/lodash@4.14.202:
     resolution: {integrity: sha512-OvlIYQK9tNneDlS0VN54LLd5uiPCBOp7gS5Z0f1mjoJYBrtStzgmJBxONW3U6OZqdtNzZPmn9BS/7WI7BFFcFQ==}
+    dev: false
 
   /@types/long@4.0.2:
     resolution: {integrity: sha512-MqTGEo5bj5t157U6fA/BiDynNkn0YknVdh48CMPkTSpFTVmvao5UQmm7uEF6xBEo7qIMAlY/JSleYaE6VOdpaA==}
@@ -3836,7 +3835,7 @@ packages:
         optional: true
     dependencies:
       '@eslint-community/regexpp': 4.10.0
-      '@typescript-eslint/parser': 7.2.0(eslint@8.56.0)(typescript@5.4.2)
+      '@typescript-eslint/parser': 7.2.0(eslint@8.57.0)(typescript@5.4.2)
       '@typescript-eslint/scope-manager': 7.2.0
       '@typescript-eslint/type-utils': 7.2.0(eslint@8.57.0)(typescript@5.4.2)
       '@typescript-eslint/utils': 7.2.0(eslint@8.57.0)(typescript@5.4.2)
@@ -3866,7 +3865,7 @@ packages:
       - typescript
     dev: true
 
-  /@typescript-eslint/parser@7.2.0(eslint@8.56.0)(typescript@5.4.2):
+  /@typescript-eslint/parser@7.2.0(eslint@8.57.0)(typescript@5.4.2):
     resolution: {integrity: sha512-5FKsVcHTk6TafQKQbuIVkXq58Fnbkd2wDL4LB7AURN7RUOu1utVP+G8+6u3ZhEroW3DF6hyo3ZEXxgKgp4KeCg==}
     engines: {node: ^16.0.0 || >=18.0.0}
     peerDependencies:
@@ -3881,7 +3880,7 @@ packages:
       '@typescript-eslint/typescript-estree': 7.2.0(typescript@5.4.2)
       '@typescript-eslint/visitor-keys': 7.2.0
       debug: 4.3.4
-      eslint: 8.56.0
+      eslint: 8.57.0
       typescript: 5.4.2
     transitivePeerDependencies:
       - supports-color
@@ -4986,6 +4985,78 @@ packages:
       - supports-color
     dev: true
 
+  /drizzle-orm@0.29.3:
+    resolution: {integrity: sha512-uSE027csliGSGYD0pqtM+SAQATMREb3eSM/U8s6r+Y0RFwTKwftnwwSkqx3oS65UBgqDOM0gMTl5UGNpt6lW0A==}
+    peerDependencies:
+      '@aws-sdk/client-rds-data': '>=3'
+      '@cloudflare/workers-types': '>=3'
+      '@libsql/client': '*'
+      '@neondatabase/serverless': '>=0.1'
+      '@opentelemetry/api': ^1.4.1
+      '@planetscale/database': '>=1'
+      '@types/better-sqlite3': '*'
+      '@types/pg': '*'
+      '@types/react': '>=18'
+      '@types/sql.js': '*'
+      '@vercel/postgres': '*'
+      better-sqlite3: '>=7'
+      bun-types: '*'
+      expo-sqlite: '>=13.2.0'
+      knex: '*'
+      kysely: '*'
+      mysql2: '>=2'
+      pg: '>=8'
+      postgres: '>=3'
+      react: '>=18'
+      sql.js: '>=1'
+      sqlite3: '>=5'
+    peerDependenciesMeta:
+      '@aws-sdk/client-rds-data':
+        optional: true
+      '@cloudflare/workers-types':
+        optional: true
+      '@libsql/client':
+        optional: true
+      '@neondatabase/serverless':
+        optional: true
+      '@opentelemetry/api':
+        optional: true
+      '@planetscale/database':
+        optional: true
+      '@types/better-sqlite3':
+        optional: true
+      '@types/pg':
+        optional: true
+      '@types/react':
+        optional: true
+      '@types/sql.js':
+        optional: true
+      '@vercel/postgres':
+        optional: true
+      better-sqlite3:
+        optional: true
+      bun-types:
+        optional: true
+      expo-sqlite:
+        optional: true
+      knex:
+        optional: true
+      kysely:
+        optional: true
+      mysql2:
+        optional: true
+      pg:
+        optional: true
+      postgres:
+        optional: true
+      react:
+        optional: true
+      sql.js:
+        optional: true
+      sqlite3:
+        optional: true
+    dev: false
+
   /drizzle-orm@0.29.3(@types/better-sqlite3@7.6.8)(@types/react@18.2.0)(better-sqlite3@9.3.0)(react@18.2.0):
     resolution: {integrity: sha512-uSE027csliGSGYD0pqtM+SAQATMREb3eSM/U8s6r+Y0RFwTKwftnwwSkqx3oS65UBgqDOM0gMTl5UGNpt6lW0A==}
     peerDependencies:
@@ -5069,7 +5140,7 @@ packages:
       drizzle-orm: '>=0.23.13'
       zod: '*'
     dependencies:
-      drizzle-orm: 0.29.3(@types/better-sqlite3@7.6.8)(@types/react@18.2.0)(better-sqlite3@9.3.0)(react@18.2.0)
+      drizzle-orm: 0.29.3
       zod: 3.22.4
     dev: false
 
@@ -5350,13 +5421,12 @@ packages:
       string.prototype.trimright: 2.1.3
     dev: false
 
-  /esbuild-plugin-polyfill-node@0.3.0(esbuild@0.19.11):
+  /esbuild-plugin-polyfill-node@0.3.0:
     resolution: {integrity: sha512-SHG6CKUfWfYyYXGpW143NEZtcVVn8S/WHcEOxk62LuDXnY4Zpmc+WmxJKN6GMTgTClXJXhEM5KQlxKY6YjbucQ==}
     peerDependencies:
       esbuild: '*'
     dependencies:
       '@jspm/core': 2.0.1
-      esbuild: 0.19.11
       import-meta-resolve: 3.1.1
     dev: true
 
@@ -5473,8 +5543,8 @@ packages:
       debug: 4.3.4
       enhanced-resolve: 5.16.0
       eslint: 8.57.0
-      eslint-module-utils: 2.8.1(@typescript-eslint/parser@7.2.0)(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0)
-      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@7.2.0)(eslint@8.56.0)
+      eslint-module-utils: 2.8.1(@typescript-eslint/parser@7.2.0)(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0)
+      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@7.2.0)(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0)
       fast-glob: 3.3.2
       get-tsconfig: 4.7.2
       is-core-module: 2.13.1
@@ -5507,7 +5577,7 @@ packages:
       eslint-import-resolver-webpack:
         optional: true
     dependencies:
-      '@typescript-eslint/parser': 7.2.0(eslint@8.56.0)(typescript@5.4.2)
+      '@typescript-eslint/parser': 7.2.0(eslint@8.57.0)(typescript@5.4.2)
       debug: 3.2.7
       eslint: 8.57.0
       eslint-import-resolver-node: 0.3.9
@@ -5516,7 +5586,7 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-module-utils@2.8.1(@typescript-eslint/parser@7.2.0)(eslint-import-resolver-node@0.3.9)(eslint@8.56.0):
+  /eslint-module-utils@2.8.1(@typescript-eslint/parser@7.2.0)(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0):
     resolution: {integrity: sha512-rXDXR3h7cs7dy9RNpUlQf80nX31XWJEyGq1tRMo+6GsO5VmTe4UTwtmonAD4ZkAsrfMVDA2wlGJ3790Ys+D49Q==}
     engines: {node: '>=4'}
     peerDependencies:
@@ -5537,15 +5607,15 @@ packages:
       eslint-import-resolver-webpack:
         optional: true
     dependencies:
-      '@typescript-eslint/parser': 7.2.0(eslint@8.56.0)(typescript@5.4.2)
+      '@typescript-eslint/parser': 7.2.0(eslint@8.57.0)(typescript@5.4.2)
       debug: 3.2.7
-      eslint: 8.56.0
-      eslint-import-resolver-node: 0.3.9
+      eslint: 8.57.0
+      eslint-import-resolver-typescript: 3.6.1(@typescript-eslint/parser@7.2.0)(eslint-plugin-import@2.29.1)(eslint@8.57.0)
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /eslint-plugin-import@2.29.1(@typescript-eslint/parser@7.2.0)(eslint@8.56.0):
+  /eslint-plugin-import@2.29.1(@typescript-eslint/parser@7.2.0)(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0):
     resolution: {integrity: sha512-BbPC0cuExzhiMo4Ff1BTVwHpjjv28C5R+btTOGaCRC7UEz801up0JadwkeSk5Ued6TG34uaczuVuH6qyy5YUxw==}
     engines: {node: '>=4'}
     peerDependencies:
@@ -5555,16 +5625,16 @@ packages:
       '@typescript-eslint/parser':
         optional: true
     dependencies:
-      '@typescript-eslint/parser': 7.2.0(eslint@8.56.0)(typescript@5.4.2)
+      '@typescript-eslint/parser': 7.2.0(eslint@8.57.0)(typescript@5.4.2)
       array-includes: 3.1.7
       array.prototype.findlastindex: 1.2.4
       array.prototype.flat: 1.3.2
       array.prototype.flatmap: 1.3.2
       debug: 3.2.7
       doctrine: 2.1.0
-      eslint: 8.56.0
+      eslint: 8.57.0
       eslint-import-resolver-node: 0.3.9
-      eslint-module-utils: 2.8.1(@typescript-eslint/parser@7.2.0)(eslint-import-resolver-node@0.3.9)(eslint@8.56.0)
+      eslint-module-utils: 2.8.1(@typescript-eslint/parser@7.2.0)(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0)
       hasown: 2.0.2
       is-core-module: 2.13.1
       is-glob: 4.0.3
@@ -7129,13 +7199,13 @@ packages:
       es5-ext: 0.10.62
     dev: true
 
-  /magika@0.2.12(seedrandom@3.0.5):
+  /magika@0.2.12:
     resolution: {integrity: sha512-ZVEA2sK21eHYrJ/tchmB8I7N9TRhR8ZvicqDG6Uf3vsaUrfhqfV1mGgbgUj1abDQOUOda0vvZM43dAMVCs6o4g==}
     hasBin: true
     dependencies:
-      '@tensorflow/tfjs': 4.17.0(seedrandom@3.0.5)
+      '@tensorflow/tfjs': 4.17.0
     optionalDependencies:
-      '@tensorflow/tfjs-node': 4.17.0(seedrandom@3.0.5)
+      '@tensorflow/tfjs-node': 4.17.0
       chalk: 5.3.0
       commander: 12.0.0
     transitivePeerDependencies:
@@ -9348,7 +9418,7 @@ packages:
   /tslib@2.6.2:
     resolution: {integrity: sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==}
 
-  /tsup@8.0.1(typescript@5.4.2):
+  /tsup@8.0.1:
     resolution: {integrity: sha512-hvW7gUSG96j53ZTSlT4j/KL0q1Q2l6TqGBFc6/mu/L46IoNWqLLUzLRLP1R8Q7xrJTmkDxxDoojV5uCVs1sVOg==}
     engines: {node: '>=18'}
     hasBin: true
@@ -9381,7 +9451,6 @@ packages:
       source-map: 0.8.0-beta.0
       sucrase: 3.35.0
       tree-kill: 1.2.2
-      typescript: 5.4.2
     transitivePeerDependencies:
       - supports-color
       - ts-node
@@ -9910,12 +9979,12 @@ packages:
     dependencies:
       '@tsconfig/strictest': 2.0.3
       '@typescript-eslint/eslint-plugin': 7.2.0(@typescript-eslint/parser@7.2.0)(eslint@8.57.0)(typescript@5.4.2)
-      '@typescript-eslint/parser': 7.2.0(eslint@8.56.0)(typescript@5.4.2)
+      '@typescript-eslint/parser': 7.2.0(eslint@8.57.0)(typescript@5.4.2)
       better-typescript-lib: 2.6.0(typescript@5.4.2)
       eslint: 8.57.0
       eslint-config-prettier: 9.1.0(eslint@8.57.0)
       eslint-import-resolver-typescript: 3.6.1(@typescript-eslint/parser@7.2.0)(eslint-plugin-import@2.29.1)(eslint@8.57.0)
-      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@7.2.0)(eslint@8.56.0)
+      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@7.2.0)(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0)
       eslint-plugin-sort: 2.11.0(eslint@8.57.0)(typescript@5.4.2)
       eslint-plugin-unicorn: 51.0.1(eslint@8.57.0)
       prettier: 3.2.5
@@ -9927,3 +9996,7 @@ packages:
       - eslint-import-resolver-webpack
       - supports-color
     dev: true
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
